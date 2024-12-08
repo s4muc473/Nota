@@ -33,7 +33,7 @@ body {
 .div--principal {
     margin-top: 5vh;
     background-color: var(--cor--principal);
-    width: 80%;
+    width: 90%;
     height: 75vh;
     border: 2px solid var(--cor--borda);
 }
