@@ -31,10 +31,10 @@ body {
 }
 
 .div--principal {
-    margin-top: 10vh;
+    margin-top: 5vh;
     background-color: var(--cor--principal);
     width: 80%;
-    height: 80vh;
+    height: 75vh;
     border: 2px solid var(--cor--borda);
 }
 
@@ -75,9 +75,9 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 20px;
-    margin-left: 20px;
-    min-width: 270px;
+    margin-right: 10px;
+    margin-left: 10px;
+    min-width: 260px;
     transition: all 0.3s ease; 
 }
 
