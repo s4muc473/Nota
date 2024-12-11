@@ -85,17 +85,7 @@ header {
     margin-right: 10px;
     margin-left: 10px;
     min-width: 297px;
-    transition: all 0.3s ease; 
     border-radius: 10px;
-}
-
-.nota:active {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
-}
-
-.nota:hover {
-    width: 100px;
 }
 
 .btn--apresentacao {
