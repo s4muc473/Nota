@@ -112,6 +112,6 @@ textarea {
     width: 80%;
     height: 40vh;
     background-color: #4f1856;
-    color: var(--cor--fonte--principal);
+    color: #fff;
     outline: none;
 }
