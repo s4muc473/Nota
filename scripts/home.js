@@ -40,7 +40,7 @@ function criaNota() {
             block: block,
         })
         localStorage.setItem(localStorageKey, JSON.stringify(arrayNotas));
-        geraNotas()
+        geraNotas('total')
         elementosDaPagina.textArea().value = '';
     }
 }
