@@ -77,7 +77,7 @@ function geraNotas() {
 
 function excluiNota(data) {
     let arrayNotas = JSON.parse(localStorage.getItem(localStorageKey)||'[]');
-    let index = arrayNotas.findIndex(x => x.data == data);
+    let index = arrayNotas.findIndex(x => x.content == data);
     arrayNotas.splice(index, 1);
     localStorage.setItem(localStorageKey, JSON.stringify(arrayNotas));
 
