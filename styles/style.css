@@ -29,6 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--cor--fonte--principal);
 }
 
 .div--principal {
@@ -63,6 +64,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
+    color: #fff;
 }
 
 #local--notas {
@@ -76,7 +78,7 @@ header {
 
 .nota {
     background-color: var(--cor--secundaria);
-    color: var(--cor--fonte--principal);
+    color: #fff;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -110,6 +112,6 @@ textarea {
     width: 80%;
     height: 40vh;
     background-color: #4f1856;
-    color: var(--cor--fonte--principal);
+    color: #fff;
     outline: none;
 }
