@@ -15,20 +15,21 @@
 </head>
 
 <body>
+    <h3>NoteMoon</h3>
+    
     <div class="div--principal">
         <header>
-                <h3>NoteMoon</h3>
-            <p>Ethel Labs</p>
+            <div>
+                <input id="input--selecionar--categoria" type="text" placeholder="informe a palavra chave">
+                <button id="btn--selecionar--categoria">Selecionar</button>
+            </div>
         </header>
-
         <div class="divDasNotas">
             <div id="nota--apresentacao">
                 <!-- NOTA DE CRIAÇÃO DE NOTAS -->
                 <div class="nota">
-                    <div class="div--botoes--principal">
-                        <div class="btn--apresentacao">
-                            <div class="btn" onclick="criaNota()"><i class="fa-solid fa-envelope"></i></div>
-                        </div>
+                    <div class="btn--apresentacao">
+                        <div class="btn" onclick="criaNota()"><i class="fa-solid fa-envelope"></i></div>
                     </div>
                     <textarea id="textArea" placeholder="Digite algo..."></textarea>
                 </div>
@@ -38,12 +39,6 @@
         
                 </div>
             </div>
-        </div>
-
-        <div class="div--blocos">
-            <button class="btn--blocks" id="btn--plano">Planos</button>
-            <button class="btn--blocks" id="btn--relato">Relatos</button>
-            <button class="btn--blocks" id="btn--projeto">Projetos</button>
         </div>
     </div>
 

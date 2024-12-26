@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
 * {
     padding: 0;
     border: none;
@@ -21,21 +25,25 @@
     --cor--fonte--principal: #1dc9d9;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    width: 90%;
+    color: var(--cor--secundaria);
+    position: relative;
+    top: 3vh;
 }
 
 .div--principal {
     margin-top: 5vh;
     background-color: var(--cor--principal);
     width: 90%;
-    height: 75vh;
+    height: 80vh;
     border: 2px solid var(--cor--borda);
 }
 
@@ -46,14 +54,39 @@ header {
     padding: 5px;
     background-color: var(--cor--secundaria);
     width: 100%;
-    height: 5vh;
+    height: auto;
     display: flex;
     justify-content: space-between;
     color: var(--cor--fonte--principal);
 }
 
+header div {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+#input--selecionar--categoria {
+    padding: 2%;
+}
+
+#btn--selecionar--categoria {
+    padding: 5px;
+    background-color: var(--cor--principal);
+    color: var(--cor--secundaria);
+}
+
+
 .divDasNotas {
-    overflow-y: auto;
+    overflow-y: hidden;
+}
+
+.divDasCategorias {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px solid #000;
+    margin-top: 1vh;
 }
 
 #nota--apresentacao {
@@ -109,12 +142,8 @@ header {
 textarea {
     width: 80%;
     height: 40vh;
+    margin-top: 2vh;
     background-color: var(--cor--secundaria);
     color: var(--cor--fonte--principal);
     outline: none;
-}
-
-.btn--blocks {
-    width: 32%;
-    padding: 2%;
 }
