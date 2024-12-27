@@ -3,6 +3,8 @@
     src: url('/styles/PixelifySans-VariableFont_wght.ttf') format('woff2');
     font-weight: normal;
     font-style: normal;
+    box-sizing: border-box;
+
 }
 
 ::-webkit-scrollbar {
@@ -13,16 +15,22 @@
     padding: 0;
     border: none;
     margin: 0;
+    outline: 0;
     font-family: MinhaFonte;
     box-sizing: border-box;
     border-radius: 10px;
 }
 
 :root {
-    --cor--principal: #1dc9d9;
+    --cor--principal: #17585e;
     --cor--secundaria: #184756;
     --cor--borda: #000;
     --cor--fonte--principal: #1dc9d9;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--cor--fonte--principal);
+    line-height: 40px;
 }
 
 body {
@@ -30,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #011617;
 }
 
 h3 {
@@ -68,11 +77,13 @@ header div {
 
 #input--selecionar--categoria {
     padding: 2%;
+    color: var(--cor--fonte--principal);
+    background-color: var(--cor--secundaria);
 }
 
 #btn--selecionar--categoria {
     padding: 5px;
-    background-color: var(--cor--principal);
+    background-color: var(--cor--fonte--principal);
     color: var(--cor--secundaria);
 }
 
