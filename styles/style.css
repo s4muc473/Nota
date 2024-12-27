@@ -7,9 +7,27 @@
 
 }
 
-/* ::-webkit-scrollbar {
-    width: 0px;
-} */
+::-webkit-scrollbar {
+    width: 100px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--cor--principal);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor--fonte--principal); 
+    border-radius: 10px; 
+    border: 3px solid var(--cor--fonte--principal); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor--principal); 
+}
+
+
 
 * {
     padding: 0;
