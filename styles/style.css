@@ -89,7 +89,7 @@ header div {
 
 
 .divDasNotas {
-    overflow-y: hidden;
+    overflow-y: scroll;
 }
 
 .divDasCategorias {
