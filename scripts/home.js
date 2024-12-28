@@ -86,6 +86,8 @@ function carregarNotas(content,date) {
     btnEditarNota.addEventListener('click', function () {
         editaNota(content)
     })
+
+    location.reload();
 }
 
 function excluiNota(data) {
@@ -93,8 +95,6 @@ function excluiNota(data) {
     let index = arrayNotas.findIndex(x => x.content == data);
     arrayNotas.splice(index, 1);
     localStorage.setItem(localStorageKey, JSON.stringify(arrayNotas));
-
-    location.reload()
 }
 
 function editaNota(content) {
