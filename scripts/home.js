@@ -99,6 +99,7 @@ function excluiNota(data) {
 function editaNota(content) {
     elementosDaPagina.textArea().value = content;
     excluiNota(content);
+    geraNotas('todas-notas');
 }
 
 window.addEventListener('load', () => {
