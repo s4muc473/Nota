@@ -93,6 +93,7 @@ function excluiNota(data) {
     let index = arrayNotas.findIndex(x => x.content == data);
     arrayNotas.splice(index, 1);
     localStorage.setItem(localStorageKey, JSON.stringify(arrayNotas));
+    geraNotas('todas-notas');
 }
 
 function editaNota(content) {
