@@ -86,8 +86,6 @@ function carregarNotas(content,date) {
     btnEditarNota.addEventListener('click', function () {
         editaNota(content)
     })
-
-    location.reload();
 }
 
 function excluiNota(data) {
