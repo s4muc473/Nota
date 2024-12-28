@@ -81,6 +81,7 @@ function carregarNotas(content,date) {
 
     btnExcluirNota.addEventListener('click', function () {
         excluiNota(content)
+        location.reload();
     })
 
     btnEditarNota.addEventListener('click', function () {
@@ -98,6 +99,7 @@ function excluiNota(data) {
 
 function editaNota(content) {
     elementosDaPagina.textArea().value = content;
+    excluiNota(content);
 }
 
 window.addEventListener('load', () => {
